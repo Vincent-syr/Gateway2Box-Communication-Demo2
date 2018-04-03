@@ -1,0 +1,27 @@
+corner case:
+	bind: UI输入的mac地址scan_set中没有
+	BoxManager.status():
+		1)statusContent如果没有last和secondLast怎么办？
+	
+
+statusack:
+	是否需要send statusack to box？
+
+	
+0402 14:07：
+	socketGateway加入组播地址，224.0.0.1；
+	box加入组播地址，224.0.0.1
+
+	
+0403 09:04
+	做log日志的设计
+	1. 参考UDP server from 蓝海的log日志方法
+	2. receive打印的日志
+	
+	3. 判断status包的时效情况时，可否取消取消last 和 secondLast，而是判断last和currenttime，如果last和currenttime的间隔超过规定，则直接提醒..
+			直接判断current和last time、
+
+			
+测速安排：
+	1. 重启路由器？
+	2. box、gatewya
